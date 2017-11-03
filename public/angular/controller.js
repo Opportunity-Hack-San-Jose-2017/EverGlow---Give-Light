@@ -712,7 +712,7 @@ $scope.getNearMe = function(ev) {
     },
     series: [{
         name: 'Number of new volunteers registered',
-        data: [24, 75, 106, 129, 144, 176, 135, 148, 216, 194, 0, 0]
+        data: [24, 18, 29, 18, 26, 34, 20, 33, 48, 72, 0, 0]
     }]
   });
   
