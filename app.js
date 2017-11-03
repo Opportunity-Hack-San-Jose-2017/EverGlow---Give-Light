@@ -15,6 +15,7 @@ var email = require('./routes/email.js');
 var upcomingevents = require('./routes/upcomingevents.js');
 var locationdetails = require('./routes/getlocation.js');
 var event_volunteer = require('./routes/event_skills_match.js');
+var eventbased_volunteer = require('./routes/eventbased_volunteer');
 var send_sms = require('./routes/twiliosms.js');
 var near_me = require('./routes/near_me');
 var getnearme = require('./routes/get_nearme');
@@ -73,6 +74,9 @@ app.get('/event_volunteer',event_volunteer.get_event_skills_match);
 app.get('/event_walk',event_volunteer.get_event_location_match);
 app.post('/locationdetails',locationdetails.locationquery);
 app.get('/getlocationdetails',locationdetails.getlocationquery);
+app.get('/walkathon_volunteer',eventbased_volunteer.walkathon_volunteer);
+app.get('/lunch_volunteer',eventbased_volunteer.lunch_volunteer);
+app.get('/fundraiser_volunteer',eventbased_volunteer.fundraiser_volunteer);
 app.post('/send_sms',send_sms.send_sms);
 
 
